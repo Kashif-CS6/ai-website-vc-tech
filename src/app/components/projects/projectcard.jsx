@@ -12,7 +12,7 @@ const Projectcard = ({ middle, heading, desc, pic, slug }) => {
     <div
       className={`w-96 md:w-80 lg:w-96 
       
-      border   border-gray-800 p-2 lg:p-10 h-[32rem]`}
+      border   border-gray-200 dark:border-gray-800 p-2 lg:p-10 h-[32rem]`}
     >
       {/* card section started here */}
       <div>
@@ -25,7 +25,7 @@ const Projectcard = ({ middle, heading, desc, pic, slug }) => {
         <div className="flex items-center justify-between my-2">
           <button
             onClick={NextpageRoute}
-            className="text-gray-500 bg-gray-900 rounded-md text-xs p-2 flex items-center gap-1 border border-gray-800"
+            className="text-white dark:text-gray-500 bg-gray-900 rounded-md text-xs p-2 flex items-center gap-1 border border-gray-800"
           >
             View Details
           </button>

@@ -52,7 +52,7 @@ const Projects = () => {
         })} */}
       </div>
       {/* card section */}
-      <div className="flex items-center flex-wrap  justify-center border border-gray-800 md:gap-4 lg:gap-0">
+      <div className="flex items-center flex-wrap  justify-center dark:border border-gray-200 dark:border-gray-800 md:gap-2 ">
         {projectdata.map((item) => {
           return (
             <div key={item.heading}>
@@ -72,7 +72,7 @@ const Projects = () => {
         <ProjectLogo />
       </div>
       <div className="p-2 lg:p-16">
-        <div className=" rounded-md bg-black flex items-center justify-center lg:justify-start flex-wrap lg:flex-nowrap p-3 md:p-2 lg:p-3 gap-2 w-fit">
+        <div className=" rounded-md bg-gray-100 dark:bg-black flex items-center justify-center lg:justify-start flex-wrap lg:flex-nowrap p-3 md:p-2 lg:p-3 gap-2 w-fit">
           <Endingcard
             heading="Machine Learning"
             desc="With the help of our machine learning services, venture into the domain "

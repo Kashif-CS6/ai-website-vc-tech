@@ -10,7 +10,14 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 const Navbar = ({ shownav, setshow }) => {
-  const [theme, setTheme] = useState(localStorage.getItem("mode"));
+  const [theme, setTheme] = useState(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const savedTheme = localStorage.getItem("mode");
+      setTheme(savedTheme ?? "light");
+    }
+  }, []);
 
   const pathname = usePathname();
   console.log("pathname:", pathname);
@@ -41,7 +48,7 @@ const Navbar = ({ shownav, setshow }) => {
   return (
     <div>
       <div
-        className={`dark:bg-custom-bluish bg-white  border border-gray-700 flex items-center justify-between p-4 ${
+        className={`dark:bg-custom-bluish bg-white  border border-gray-200 dark:border-gray-700 flex items-center justify-between p-4 ${
           shownav ? "p-0 md:p-4 blur-sm lg:blur-0" : "p-4 blur-0"
         }`}
       >
@@ -57,7 +64,7 @@ const Navbar = ({ shownav, setshow }) => {
             onClick={() => setActive("")}
             className={`duration-200 ${
               active === ""
-                ? "border p-1 h-fit border-gray-500 dark:text-white text-black rounded-md w-fit"
+                ? "border p-1 h-fit border-gray-300 dark:border-gray-500 dark:text-white text-black rounded-md w-fit"
                 : ""
             }`}
           >
@@ -68,7 +75,7 @@ const Navbar = ({ shownav, setshow }) => {
             onClick={() => setActive("projects")}
             className={`duration-200 ${
               active === "projects"
-                ? "border p-1 h-fit border-gray-500 dark:text-white text-black  rounded-md w-fit"
+                ? "border p-1 h-fit border-gray-300 dark:border-gray-500 dark:text-white text-black  rounded-md w-fit"
                 : ""
             }`}
           >
@@ -79,7 +86,7 @@ const Navbar = ({ shownav, setshow }) => {
             onClick={() => setActive("teams")}
             className={` duration-200 ${
               active === "teams"
-                ? "border p-1 h-fit border-gray-500 dark:text-white text-black  rounded-md w-fit"
+                ? "border p-1 h-fit border-gray-300 dark:border-gray-500 dark:text-white text-black  rounded-md w-fit"
                 : ""
             }`}
           >
@@ -90,7 +97,7 @@ const Navbar = ({ shownav, setshow }) => {
             onClick={() => setActive("about")}
             className={`duration-200 ${
               active === "about"
-                ? "border p-1 h-fit border-gray-500 dark:text-white text-black  rounded-md w-fit"
+                ? "border p-1 h-fit border-gray-300 dark:border-gray-500 dark:text-white text-black  rounded-md w-fit"
                 : ""
             }`}
           >

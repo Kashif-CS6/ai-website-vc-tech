@@ -35,7 +35,7 @@ const Faq = () => {
             <Faqcard />
           </div>
         </div>
-        <button className="bg-violet-600 text-sm  rounded-3xl px-2 py-2 font-[600] cursor-pointer flex justify-center">
+        <button className="bg-violet-600 text-sm text-white  rounded-3xl px-2 py-2 font-[600] cursor-pointer flex justify-center">
           Ask some question
         </button>
       </div>

@@ -59,10 +59,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="w-80 h-60 mt-12 md:w-auto lg:w-auto lg:auto  md:my-6">
+      <div className="w-80 h-60 mt-12 md:w-auto lg:w-auto  md:my-6">
         <Image
           src="/banner.jpg"
-          className="w-auto h-full lg:object-none lg:h-auto"
+          className="w-full h-full object-cover lg:object-none lg:h-auto"
           width={1000}
           height={400}
         />

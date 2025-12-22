@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 const Footer = () => {
   return (
-    <div className="dark:bg-custom-bluish bg-normal-white border border-gray-800">
+    <div className="dark:bg-custom-bluish bg-normal-white border border-gray-200 dark:border-gray-800">
       <div className="flex flex-wrap md:flex-nowrap p-10 gap-4 md:gap-0">
         {/* 1st section */}
         <div className="dark:text-grey-small text-normal-black w-32 md:w-60   font-[400] flex flex-col gap-2 text-sm ">
@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
       </div>
       {/* ending footer */}
-      <div className="mx-10 border-t border-gray-800 p-6 ">
+      <div className="mx-10 border-t border-gray-200 dark:border-gray-800 p-6 ">
         <div className="flex justify-center md:justify-between gap-4 md:gap-0 items-center flex-wrap md:flex-nowrap">
           {/* left side */}
           <div className="text-sm dark:text-grey-small text-normal-black flex  items-center gap-5">

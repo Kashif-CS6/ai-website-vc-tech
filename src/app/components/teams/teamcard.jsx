@@ -20,8 +20,8 @@ const TeamCard = () => {
           30303003030
         </a>
       </div>
-      <button className="flex items-center gap-1 bg-blue-700 px-2 rounded-md w-fit">
-        <BsLinkedin className="dark:text-normal-white text-normal-black"/>
+      <button className="flex items-center gap-1 bg-blue-700 px-2 text-white rounded-md w-fit">
+        <BsLinkedin className="text-normal-white"/>
         LinkedIn
       </button>
     </div>

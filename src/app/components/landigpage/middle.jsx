@@ -63,7 +63,7 @@ const Middle = () => {
         </div>
       </div>
       {/* companies logo */}
-      <div className="flex flex-wrap flex-col dark:text-normal-white text-normal-black md:flex-row justify-center items-center gap-4 md:gap-24 mt-4 md:mt-8">
+      <div className="flex flex-wrap  flex-col dark:text-normal-white text-normal-black md:flex-row justify-center items-center gap-4 md:gap-24 mt-4 md:mt-8">
         <div className="flex items-center text-2xl font-[700] gap-2">
           <TbEyeSearch fontSize={30} />
           <h1>waverio</h1>

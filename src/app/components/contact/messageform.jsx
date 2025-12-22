@@ -233,7 +233,7 @@ const MessageForm = () => {
         <input
           type="submit"
           value="Send Message"
-          className="font-[600] bg-violet-900 w-full p-2 rounded-md my-2 cursor-pointer"
+          className="font-[600] bg-violet-900 text-white w-full p-2 rounded-md my-2 cursor-pointer"
         />
       </form>
     </div>

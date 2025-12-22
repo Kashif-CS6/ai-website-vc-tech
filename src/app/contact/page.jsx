@@ -8,7 +8,7 @@ import contactdata from "@/jsondata/contactdata";
 const Contact = () => {
   return (
     <div className="dark:bg-custom-bluish bg-white py-4">
-      <div className="lg:bg-[url('/bgpattern.png')] object-contain lg:w-8/12 flex justify-center lg:mx-auto h-40">
+      <div className="dark:lg:bg-[url('/bgpattern.png')] object-contain lg:w-8/12 flex justify-center lg:mx-auto h-40">
         <div
           id="Floow"
           className="relative mb-12 md:mb-0 my-4  flex flex-col place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[160px] after:dark:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[160px] before:lg:dark:h-[360px] z-20 "

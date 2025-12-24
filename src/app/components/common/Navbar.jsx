@@ -15,7 +15,7 @@ const Navbar = ({ shownav, setshow }) => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const savedTheme = localStorage.getItem("mode");
-      setTheme(savedTheme ?? "light");
+      setTheme(savedTheme ?? "dark");
     }
   }, []);
 
